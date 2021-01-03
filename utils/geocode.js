@@ -14,7 +14,6 @@ const geocode = (location, callback) => {
     .request(options)
     .then((response) => {
       const locations = response.data.features;
-      // console.log({ locations });
 
       if (!locations.length) {
         return callback(
@@ -27,13 +26,9 @@ const geocode = (location, callback) => {
       const { place_name, center } = firstLocation;
       const [longitude, latitude] = center;
 
-      // console.log({ place_name, longitude, latitude });
-
       callback(undefined, { location: place_name, longitude, latitude });
     })
     .catch((error) => {
-      console.log({ error });
-
       callback("Unable to connect to location services, please try again");
     });
 };
