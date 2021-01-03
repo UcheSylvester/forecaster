@@ -1,5 +1,3 @@
-console.log("Javascript is loaded!!");
-
 const weatherForm = document.querySelector("form");
 const input = document.querySelector("input");
 const errorContainer = document.querySelector(".error");
