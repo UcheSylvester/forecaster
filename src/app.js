@@ -25,21 +25,21 @@ app.use(express.static(publicDirPath));
 app.get("/", (req, res) => {
   res.render("index", {
     title: "Weather Forcaster!",
-    name: "Dan Eich",
+    name: "Sylvester",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About Me",
-    name: "Dan Eich",
+    name: "Sylvester",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    name: "Dan Eich",
+    name: "Sylvester",
     message: "You need some help? contact me at daneich@gmail.com",
   });
 });
